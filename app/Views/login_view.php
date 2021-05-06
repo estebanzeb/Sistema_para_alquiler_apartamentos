@@ -1,7 +1,7 @@
 <div class="container">
 <img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="">
 <h1>Inicio de sesion</h1>
-<form>
+<form method="POST" action="<?php echo base_url().'/public/ingresar'?> ">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Correo</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" require> 

@@ -11,13 +11,14 @@
 
 <nav class="nav nav-pills flex-column flex-sm-row">
 <div class="container-fluid navbar-dark bg-dark">
-    <a class="navbar-brand" href="home">
+    <a class="navbar-brand" href="<?php echo base_url().'/public/home'?>">
       <img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="" width="30" height="24" class="d-inline-block align-text-top">
     </a>
   </div>
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="login">Login</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="registro">Registro</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="<?php echo base_url().'/public/login'?>">Login</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro'?>">Registros</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro/crear'?>">Crear Registro</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregarApartamento'?>">Agregar Apartamento</a>
   <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
   <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sobre nosotros</a>
 </nav>
