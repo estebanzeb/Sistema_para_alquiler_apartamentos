@@ -25,8 +25,8 @@ class RegistroModelo extends Model
         $registro= $this->db->query($sql);
         return $registro->getResult();
     }
-    function registroEditar($nombre, $correo, $pais, $ciudad, $contraseña, $rol){
-        $sql = "UPDATE registro set registro='{$nombre}', registro='{$correo}', registro='{$pais}', registro='{$ciudad}', registro='{$contraseña}', registro='{$rol}', WHERE id={$id}";
+    function registroEditar($id, $nombre, $correo, $pais, $ciudad, $contraseña, $rol){
+        $sql = "UPDATE registro set nombre='{$nombre}', correo='{$correo}', pais='{$pais}', ciudad='{$ciudad}', contraseña='{$contraseña}', rol='{$rol}' WHERE id={$id}";
         $this->db->query($sql);
     }
 }

@@ -37,7 +37,7 @@ class RegistroController extends BaseController
 		$ciudad = $request->getPost('ciudad');
 		$contraseña = $request->getPost('contraseña');
 		$rol = $request->getPost('rol');
-
+		
 		$registrarModelo->addRegistro($nombre, $correo, $pais, $ciudad, $contraseña, $rol);
 
 		return redirect()->to('/public/registro');
@@ -70,8 +70,10 @@ class RegistroController extends BaseController
 		$ciudad = $request->getPost('ciudad');
 		$contraseña = $request->getPost('contraseña');
 		$rol = $request->getPost('rol');
+
 		$id= $request->getGet('id');
-		$registrarModelo -> registroEditar($nombre, $correo, $pais, $ciudad, $contraseña, $rol);
+		$registrarModelo -> registroEditar($id, $nombre, $correo, $pais, $ciudad, $contraseña, $rol);
+
 		return redirect()->to('/public/registro');
     }
 }

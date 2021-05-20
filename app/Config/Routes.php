@@ -43,7 +43,12 @@ $routes->get('/eliminarregistro', 'RegistroController::eliminarRegistro');
 $routes->get('/modificarregistro', 'RegistroController::modificarRegistro');
 $routes->post('/modificar', 'RegistroController::modificarEditar');
 
-$routes->get('/agregarApartamento', 'AgregarApartamentoController::index');
+$routes->get('/agregar', 'AgregarApartamentoController::index');
+$routes->get('/agregar/crear', 'AgregarApartamentoController::crear');
+$routes->post('/añadirapartamento', 'AgregarApartamentoController::añadirApartamento');
+$routes->get('/eliminarapartamento', 'AgregarApartamentoController::eliminarApartamento');
+$routes->get('/modificarapartamento', 'AgregarApartamentoController::modificarApartamento');
+$routes->post('/modificar', 'AgregarApartamentoController::modificarEditar');
 
 /*
  * --------------------------------------------------------------------

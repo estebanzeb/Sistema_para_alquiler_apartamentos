@@ -18,7 +18,7 @@
   <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="<?php echo base_url().'/public/login'?>">Login</a>
   <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro'?>">Registros</a>
   <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro/crear'?>">Crear Registro</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregarApartamento'?>">Agregar Apartamento</a>
-  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sobre nosotros</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar'?>">Apartamentos</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar/crear'?>">Agregar Apartamento</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar/crear'?>">Sobre nosotros</a>
 </nav>

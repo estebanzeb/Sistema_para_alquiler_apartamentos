@@ -2,8 +2,8 @@
   <div class="row">
     <?php
       foreach($registros as $registro){
-        $deleteruta=  base_url()."/public/eliminarregistro?id={$registro->id}";
-        $updateruta=  base_url()."/public/modificarregistro?id={$registro->id}";
+        $deleteruta =  base_url()."/public/eliminarregistro?id={$registro->id}";
+        $updateruta =  base_url()."/public/modificarregistro?id={$registro->id}";
         $template="
         <div class='col-12 col-sm-12 col-md-6 col-lg-4'>
           <div class='card' style='width: 18rem;'>

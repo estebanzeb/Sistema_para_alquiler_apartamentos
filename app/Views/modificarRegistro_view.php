@@ -1,12 +1,10 @@
-<?php
-var_dump($registro);
-?>
+
 <div class="container">
 <img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="">
 
 <h1>Modificar</h1>
 
-<form method="POST" action="<?php echo base_url().'/public/modificar'?>">
+<form method="POST" action="<?php echo base_url()?>/public/modificar?id=<?php echo $registro->id?>">
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
@@ -35,4 +33,4 @@ var_dump($registro);
   </div>
   <button type="submit" class="btn btn-primary">Actualizar registro</button>
 </form>
-</div>7
+</div>
