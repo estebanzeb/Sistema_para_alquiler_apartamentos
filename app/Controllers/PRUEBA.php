@@ -1,18 +1,12 @@
-<?php
-
-namespace App\Controllers;
-use App\Models\AgregarApartamentoModelo;
-class AgregarApartamentoController extends BaseController
-{
-	public function index()
+public function index()
 	{	
-		$apartamento =  new AgregarApartamentoModelo();
-		$resultado = $apartamento->readApartamento();
+		$agregar =  new AgregarApartamentoModelo();
+		$resultadoagregaras = $agregar->readApartamento();
 		$dato = array(
-			"apartamentos" => $resultado,
+			"agregaras" => $resultadoagregaras,
 		);
 		echo view('layouts/header');
-		echo view('agregar_view',$dato);
+		echo view('agregar_view', $dato);//Segundo parametro (Los datos que quiero enviar) 
 		echo view('layouts/footer');
 	} 
 	public function crear(){
@@ -32,19 +26,25 @@ class AgregarApartamentoController extends BaseController
 		$agregarModelo =  new AgregarApartamentoModelo();
 		
 		$ciudad = $request->getPost('ciudad');
-		$pais = $request->getPost('pais');
+	|	$pais = $request->getPost('pais');
 		$direccion = $request->getPost('direccion');
 		$ubicacionGoogleMap = $request->getPost('ubicacionGoogleMap');
 		$numeroAbitaciones = $request->getPost('numeroAbitaciones');
-		$imgApartamento = $request->getPost('imgApartamento');
 		$imgDestacada = $request->getPost('imgDestacada');
 		$valorNoche = $request->getPost('valorNoche');
 		$reseña = $request->getPost('reseña');
 
+		$file = $request->getFile('imgApartamento');
+		$imageName = $file->getRandomName();
+		$imagenurl = "";
+		if ($file->isValid() && ! $file->hasMoved()){
+			$file->move('./uploads/imagenes/', $imageName);
+			$imagenurl = base_url(). '/uploads/imagenes/'. $imageName;
+		}
+
 		$agregarModelo->addApartamento($ciudad, $pais, $direccion, $ubicacionGoogleMap, $numeroAbitaciones, $imgApartamento, $imgDestacada, $valorNoche, $reseña);
 
 		return redirect()->to('/public/agregar');
-	
 	}
 	public function eliminarApartamento(){
 		$request = \Config\Services::request();
@@ -64,12 +64,12 @@ class AgregarApartamentoController extends BaseController
 		echo view('modificarAgregar_view',array("agregar" =>$agregar[0]));
 		echo view('layouts/footer');
 	}
-	public function modificarEditarapartamento(){
+	public function modificarEditar(){
         $request = \Config\Services::request();
 		$agregarModelo =  new AgregarApartamentoModelo();
 
 		$ciudad = $request->getPost('ciudad');
-		$pais = $request->getPost('pais');
+	|	$pais = $request->getPost('pais');
 		$direccion = $request->getPost('direccion');
 		$ubicacionGoogleMap = $request->getPost('ubicacionGoogleMap');
 		$numeroAbitaciones = $request->getPost('numeroAbitaciones');

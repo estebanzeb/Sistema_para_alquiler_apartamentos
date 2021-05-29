@@ -9,10 +9,6 @@
     <title>Sistema para alquiler apartamentos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
-
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -40,8 +36,7 @@
         }
       }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    
   </head>
 <nav class="nav nav-pills flex-column flex-sm-row">
 <div class="container-fluid navbar-dark bg-dark">
@@ -52,6 +47,7 @@
   <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="<?php echo base_url().'/public/login'?>"><h2 class="text-dark">Login</h2></a>
   <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro'?>"><h2  class="text-dark">Registros</h2></a>
   <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro/crear'?>"><h2 class="text-dark">Crear Registro</h2></a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar'?>"><h2 class="text-dark">Apartamentos</h2></a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar'?>"><h2  class="text-dark">Apartamentos</h2></a>
+
   <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar/crear'?>"><h2 class="text-dark">Agregar Apartamento</h2></a>
 </nav>

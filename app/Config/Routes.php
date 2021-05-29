@@ -48,7 +48,7 @@ $routes->get('/agregar/crear', 'AgregarApartamentoController::crear');
 $routes->post('/añadirapartamento', 'AgregarApartamentoController::añadirApartamento');
 $routes->get('/eliminarapartamento', 'AgregarApartamentoController::eliminarApartamento');
 $routes->get('/modificarapartamento', 'AgregarApartamentoController::modificarApartamento');
-$routes->post('/modificar', 'AgregarApartamentoController::modificarEditar');
+$routes->post('/modificarapartamento', 'AgregarApartamentoController::modificarEditarapartamento');
 
 /*
  * --------------------------------------------------------------------
