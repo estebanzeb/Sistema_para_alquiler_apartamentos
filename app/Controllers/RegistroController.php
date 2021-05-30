@@ -16,16 +16,20 @@ class RegistroController extends BaseController
 		echo view('layouts/footer');
 	} 
 	public function crear(){
+
 		$session = session();
 		$session->get('usarname');
-		//if($session->get('usarname') != "" || $session->get('usarname') != null){
+
+		if($session->get('usarname') != "" || $session->get('usarname') != null){
 		
-		echo view('layouts/header');
-		echo view('crearRegistro_view');
-		echo view('layouts/footer');
-		//}else{
-		//	echo "NO tiene permisos para acceder";
-		//}
+			echo view('layouts/header');
+			echo view('crearRegistro_view');
+			echo view('layouts/footer');
+			
+		}else{
+			return redirect()->to('/public/login');
+			
+		}
 	}
 	public function añadirRegistro(){
 		$request = \Config\Services::request();
@@ -43,11 +47,20 @@ class RegistroController extends BaseController
 		return redirect()->to('/public/registro');
 	}
 	public function eliminarRegistro(){
+
+		$session = session();
+		$session->get('usarname');
+		if($session->get('usarname') != "" || $session->get('usarname') != null){
+		
+
 		$request = \Config\Services::request();
 		$registrarModelo =  new RegistroModelo();
 		$id= $request->getGet('id');
 		$registrarModelo->deleteRegistro($id);
 		return redirect()->to('/public/registro');
+	}else{
+		echo "NO tiene permisos de eliminar";
+	}
 	}
 	public function modificarRegistro(){
 		$request = \Config\Services::request();
