@@ -1,8 +1,9 @@
+<body background="<?php echo base_url(); ?>/public/assets/img/fondo1.jpg">
 
 <div class="container">
 <img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="">
 
-<h1>Modificar</h1>
+<h1 class="text-danger">Modificar Registro</h1>
 
 <form method="POST" action="<?php echo base_url()?>/public/modificar?id=<?php echo $registro->id?>">
 

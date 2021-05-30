@@ -3,7 +3,7 @@
 
 <main role="main">
 
-
+<form action="<?php echo base_url().'/public/agregar'?>">
   <div class="container marketing">
 
   
@@ -13,8 +13,9 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h1 class="featurette-heading bg-danger text-dark fst-italic">“La vivienda que buscas te abrazará desde el momento que abras la puerta principal…cuando lo sientas no dudes…esa es la tuya”</h1>
+        <span class="fw-bolder"><h2>Vende tu Piso en 60 Días | Inmobiliaria Sin Comisiones </h2></span>
+        <button type="submit" class="btn btn-primary"><h3>Ver mas</h3></button>
       </div>
       <div class="col-md-5">
       
@@ -26,8 +27,9 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h1 class="featurette-heading bg-danger text-dark fst-italic">"No busques más, has llegado al final del camino" </h1><span class="fw-bolder"><h2>Aqui esta justo lo que buscabas, no espere mas y vendelo</span></h2>
+        <p class="lead">¿Vendes tu Piso? | Hazlo Online y sin Comisiones | Inmobiliaria Online | Vende tu Piso en 36 días</p>
+        <button type="submit" class="btn btn-primary"><h3>Ver mas</h3></button>
       </div>
       <div class="col-md-5 order-md-1">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" src="<?php echo base_url(); ?>/public/assets/img/imagen1.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
@@ -38,8 +40,9 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+      <h1 class="featurette-heading bg-danger text-dark fst-italic">"Tu casa es nuestra prioridad, confía en los que saben"</h1> </h1>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <button type="submit" class="btn btn-primary"><h3>Ver mas</h3></button>
       </div>
       <div class="col-md-5">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" src="<?php echo base_url(); ?>/public/assets/img/imagen2.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
@@ -48,7 +51,8 @@
 
     <hr class="featurette-divider">
 
-  </div><
+  </div>
+  </form>
 </main>
 </body>
 </html>

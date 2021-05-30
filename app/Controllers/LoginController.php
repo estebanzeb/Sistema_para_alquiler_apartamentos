@@ -18,8 +18,8 @@ class LoginController extends BaseController
 		$session = session();
 		$newdata = [
 			'username'  => 'johndoe',
-			'email'     => 'johndoe@some-site.com',
-			'logged_in' => TRUE
+			//'email'     => 'johndoe@some-site.com',
+			//'logged_in' => TRUE
 	];
 	$session->set($newdata);
 	return redirect()->to('/public/registro/crear');

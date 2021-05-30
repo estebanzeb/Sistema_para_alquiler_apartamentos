@@ -42,7 +42,7 @@ class AgregarApartamentoController extends BaseController
 		$reseña = $request->getPost('reseña');
 
 		$agregarModelo->addApartamento($ciudad, $pais, $direccion, $ubicacionGoogleMap, $numeroAbitaciones, $imgApartamento, $imgDestacada, $valorNoche, $reseña);
-
+ 
 		return redirect()->to('/public/agregar');
 	
 	}

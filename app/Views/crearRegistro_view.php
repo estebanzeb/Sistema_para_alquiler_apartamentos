@@ -1,6 +1,8 @@
+<body background="<?php echo base_url(); ?>/public/assets/img/fondo1.jpg">
+
 <div class="container">
-//<img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="">
-<h1>Registrarce</h1>
+<img src="<?php echo base_url(); ?>/public/assets/img/.jfif ?>" alt="">
+<h1 class="text-danger">Registrarce</h1>
 <form method="POST" action="<?php echo base_url().'/public/añadirregistro'?>">
 
   <div class="mb-3">
@@ -32,6 +34,6 @@
     <label for="exampleInputPassword1" class="form-label">Rol (anfitrion, invitado)</label>
     <input type="text" class="form-control" id="rol" name="rol">
   </div>
-  <button type="submit" class="btn btn-primary">Crear registro</button>
+  <button type="submit" class="btn btn-primary">Crear Registro</button>
 </form>
 </div>

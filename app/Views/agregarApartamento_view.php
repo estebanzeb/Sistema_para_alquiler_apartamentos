@@ -1,6 +1,8 @@
+<body background="<?php echo base_url(); ?>/public/assets/img/fondo1.jpg">
+
 <div class="container">
-<img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="">
-<h1>Agregar apartamento</h1>
+
+<h1 class="text-danger">Agregar Apartamento</h1>
 <form method="POST" action="<?php echo base_url().'/public/añadirapartamento'?>">
 
   <div class="mb-3">
@@ -21,11 +23,11 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Número de habitaciones</label>
-    <input type="text" class="form-control" id="numeroAbitaciones" name="numeroAbitaciones" placeholder="Contraseña" maxlength="3" name="precio" > 
+    <input type="text" class="form-control" id="numeroAbitaciones" name="numeroAbitaciones" maxlength="3"> 
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">imagen del apartamento (URL)</label>
-    <input type="text" class="form-control" id="imgApartamento" name="imgApartamento">
+    <input type="file" class="form-control" id="imgApartamento" name="imgApartamento">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Imagen destacada (URL)</label>
@@ -33,12 +35,12 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Valor noche</label>
-    <input type="text" class="form-control" id="valorNoche" name="valorNoche">
+    <input type="text" class="form-control" maxlength="9" id="valorNoche" name="valorNoche">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Reseña</label>
     <input type="text" class="form-control" id="reseña" name="reseña">
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary">Agregar Apartamento</button>
 </form>
 </div>

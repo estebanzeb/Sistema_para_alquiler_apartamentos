@@ -17,19 +17,20 @@ class RegistroController extends BaseController
 	} 
 	public function crear(){
 
-		$session = session();
-		$session->get('usarname');
+		//$session = session();
+		//$session->get('usarname');
 
-		if($session->get('usarname') != "" || $session->get('usarname') != null){
+		//if($session->get('usarname') != "" || $session->get('usarname') != null){
 		
 			echo view('layouts/header');
 			echo view('crearRegistro_view');
 			echo view('layouts/footer');
 			
-		}else{
-			return redirect()->to('/public/login');
+		//}else{
+
+			//Echo "Usted no tiene permisos para ingresar";
 			
-		}
+		//}
 	}
 	public function añadirRegistro(){
 		$request = \Config\Services::request();
@@ -48,9 +49,9 @@ class RegistroController extends BaseController
 	}
 	public function eliminarRegistro(){
 
-		$session = session();
-		$session->get('usarname');
-		if($session->get('usarname') != "" || $session->get('usarname') != null){
+		//$session = session();
+		//$session->get('usarname');
+		//if($session->get('usarname') != "" || $session->get('usarname') != null){
 		
 
 		$request = \Config\Services::request();
@@ -58,9 +59,9 @@ class RegistroController extends BaseController
 		$id= $request->getGet('id');
 		$registrarModelo->deleteRegistro($id);
 		return redirect()->to('/public/registro');
-	}else{
-		echo "NO tiene permisos de eliminar";
-	}
+	//}else{
+	//	echo "NO TIENES PERMISOS DE ELIMINAR";
+	//}
 	}
 	public function modificarRegistro(){
 		$request = \Config\Services::request();
