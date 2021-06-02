@@ -27,7 +27,7 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">imagen del apartamento (URL)</label>
-    <input type="file" class="form-control" id="imgApartamento" name="imgApartamento">
+    <input type="text" class="form-control" id="imgApartamento" name="imgApartamento">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Imagen destacada (URL)</label>
