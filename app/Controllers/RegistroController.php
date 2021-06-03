@@ -20,7 +20,7 @@ class RegistroController extends BaseController
 		//$session = session();
 		//$session->get('usarname');
 
-		//if($session->get('usarname') != "" || $session->get('usarname') != null){
+		//if($session->get('username') != "" || $session->get('usarname') != null){
 		
 			echo view('layouts/header');
 			echo view('crearRegistro_view');

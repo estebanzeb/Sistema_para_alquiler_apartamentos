@@ -39,15 +39,15 @@
     
   </head>
 <nav class="nav nav-pills flex-column flex-sm-row">
-<div class="container-fluid navbar-dark bg-dark">
+<div class="container-fluid navbar-dark bg-dark text-warning">
     <a class="navbar-brand" href="<?php echo base_url().'/public/home'?>">
       <img src="<?php echo base_url(); ?>/public/assets/img/imagen1.jfif ?>" alt="" width="30" height="24" class="d-inline-block align-text-top">
     </a>
   </div>
-  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="<?php echo base_url().'/public/login'?>"><h2 class="text-dark">Login</h2></a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro'?>"><h2  class="text-dark">Registros</h2></a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro/crear'?>"><h2 class="text-dark">Crear Registro</h2></a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar'?>"><h2  class="text-dark">Apartamentos</h2></a>
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="<?php echo base_url().'/public/login'?>"><h2 class="text-warning">Login</h2></a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro'?>"><h2  class="text-warning">Registros</h2></a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/registro/crear'?>"><h2 class="text-warning">Crear Registro</h2></a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar'?>"><h2  class="text-warning">Apartamentos</h2></a>
 
-  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar/crear'?>"><h2 class="text-dark">Agregar Apartamento</h2></a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="<?php echo base_url().'/public/agregar/crear'?>"><h2 class="text-warning">Agregar Apartamento</h2></a>
 </nav>

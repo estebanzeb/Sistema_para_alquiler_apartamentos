@@ -10,7 +10,7 @@
 
 <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Cidad</label>
-    <input type="text" value="<?php echo $agregar->ciudad ?>" class="form-control" id="ciudad" name="ciudad"> 
+    <input type="text" value="<?php echo $agregar->ciudad ?>" class="form-control" id="ciudad" name="ciudad" required> 
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Pais</label>

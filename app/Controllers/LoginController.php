@@ -13,8 +13,7 @@ class LoginController extends BaseController
 	}
 	public function sgnIn(){
 		
-		//SELECT * from usar WHERE usarname = user and password = pass;
-		//id,username, password
+		
 		$session = session();
 		$newdata = [
 			'username'  => 'johndoe',

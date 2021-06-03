@@ -37,6 +37,18 @@ class AgregarApartamentoController extends BaseController
 		$ubicacionGoogleMap = $request->getPost('ubicacionGoogleMap');
 		$numeroAbitaciones = $request->getPost('numeroAbitaciones');
 		$imgApartamento = $request->getPost('imgApartamento');
+
+		//$file = $request->getfile('imgApartamento');
+		//$imageName = $file->getRandomName;
+		//$imagenApartamento = "";
+		//if ($file->isValid() && ! $file->hasMoved())
+			//{
+			//	$file->move('./public/uploads/images/', $imageName);
+			//	$imagenApartamento = base_url()."/public/uploads/images/".$imageName;
+			//}
+
+
+
 		$imgDestacada = $request->getPost('imgDestacada');
 		$valorNoche = $request->getPost('valorNoche');
 		$reseña = $request->getPost('reseña');

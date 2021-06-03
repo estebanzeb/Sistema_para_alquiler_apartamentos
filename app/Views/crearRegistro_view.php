@@ -7,32 +7,36 @@
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
-    <input type="text" class="form-control" id="nombre" name="nombre" > 
+    <input type="text" class="form-control" id="nombre" name="nombre" required autofocus> 
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Correo(Email)</label>
-    <input type="email" class="form-control" id="correo" name="correo">
+  <label for="exampleInputPassword1" class="form-label">Correo(Email)</label>
+  <div class="input-group mb-3">
+    
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="email" class="form-control" id="correo" name="correo" required>
     <div id="emailHelp" class="form-text">Correo@gmail.com</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">País</label>
-    <input type="text" class="form-control" id="pais" name="pais"> 
+    <input type="text" class="form-control" id="pais" name="pais" required> 
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Ciudad</label>
-    <input type="text" class="form-control" id="ciudad" name="ciudad">
+    <input type="text" class="form-control" id="ciudad" name="ciudad" required>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Contraseña</label>
-    <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" maxlength="3" name="precio" > 
+  <label for="exampleInputEmail1" class="form-label">Contraseña</label>
+  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">#</span>
+    <input type="password" class="form-control" id="contraseña" name="contraseña" maxlength="3" required> 
   </div>
+
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Confirmar contraseña</label>
-    <input type="password" class="form-control" id="contraseña2" name="contraseña2">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Rol (anfitrion, invitado)</label>
-    <input type="text" class="form-control" id="rol" name="rol">
+    <label for="exampleInputPassword1" class="form-label">Rol</label>
+    <select lass="form-control" required name="rol">
+  <option> </option>
+  <option value="Anfitrion" >Anfitrion</option>
+  <option value="Invitado">Invitado</option>
+</select>
   </div>
   <button type="submit" class="btn btn-primary">Crear Registro</button>
 </form>

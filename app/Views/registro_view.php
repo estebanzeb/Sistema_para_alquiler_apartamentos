@@ -1,4 +1,4 @@
-<body background="<?php echo base_url(); ?>/public/assets/img/fondo1.jpg">
+<body background="<?php echo base_url(); ?>/public/assets/img/fondo2.jpg">
 <div class="row justify-content-center">
   <div id="title" class="cold-md-8" >
   

@@ -26,11 +26,16 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Contraseña</label>
-    <input type="password" value="<?php echo $registro->contraseña ?>" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" maxlength="3" name="precio" > 
+    <input type="password" value="<?php echo $registro->contraseña ?>" class="form-control" id="contraseña" name="contraseña" placeholder="###" maxlength="3" > 
   </div>
+  
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Rol (anfitrion, invitado)</label>
-    <input type="text" value="<?php echo $registro->rol ?>" class="form-control" id="rol" name="rol">
+    <label for="exampleInputPassword1" class="form-label" >Rol</label>
+    <select lass="form-control" required name="rol" required>
+    <option ></option>
+  <option value="Anfitrion">Anfitrion </option>
+  <option value="Invitado"> Invitado </option>
+</select>
   </div>
   <button type="submit" class="btn btn-primary">Actualizar registro</button>
 </form>

@@ -1,4 +1,4 @@
-<body background="<?php echo base_url(); ?>/public/assets/img/fondo1.jpg">
+<body background="<?php echo base_url(); ?>/public/assets/img/fondo3.jpg">
     
 
 <main role="main">
@@ -14,7 +14,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h1 class="featurette-heading bg-danger text-dark fst-italic">“La vivienda que buscas te abrazará desde el momento que abras la puerta principal…cuando lo sientas no dudes…esa es la tuya”</h1>
-        <span class="fw-bolder"><h2>Vende tu Piso en 60 Días | Inmobiliaria Sin Comisiones </h2></span>
+        <span class="fw-bolder"><h2 class=" text-warning">Vende tu Piso en 60 Días | Inmobiliaria Sin Comisiones </h2></span>
         <button type="submit" class="btn btn-primary"><h3>Ver mas</h3></button>
       </div>
       <div class="col-md-5">
@@ -27,8 +27,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-      <h1 class="featurette-heading bg-danger text-dark fst-italic">"No busques más, has llegado al final del camino" </h1><span class="fw-bolder"><h2>Aqui esta justo lo que buscabas, no espere mas y vendelo</span></h2>
-        <p class="lead">¿Vendes tu Piso? | Hazlo Online y sin Comisiones | Inmobiliaria Online | Vende tu Piso en 36 días</p>
+      <h1 class="featurette-heading bg-danger text-dark fst-italic">"No busques más, has llegado al final del camino" </h1><span class="fw-bolder"><h2 class=" text-warning">Aqui esta justo lo que buscabas, no espere mas y vendelo</span></h2>
+       
         <button type="submit" class="btn btn-primary"><h3>Ver mas</h3></button>
       </div>
       <div class="col-md-5 order-md-1">
@@ -40,8 +40,8 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-      <h1 class="featurette-heading bg-danger text-dark fst-italic">"Tu casa es nuestra prioridad, confía en los que saben"</h1> </h1>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h1 class="featurette-heading bg-danger text-dark fst-italic">"Tu casa es nuestra prioridad, confía en los que saben"</h1>
+      <span class="fw-bolder"><h2 class=" text-warning">¿Vendes tu Piso? | Hazlo Online y sin Comisiones | Inmobiliaria Online | Vende tu Piso en 36 días</h2></span>
         <button type="submit" class="btn btn-primary"><h3>Ver mas</h3></button>
       </div>
       <div class="col-md-5">

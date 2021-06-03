@@ -1,5 +1,10 @@
 <!-- Footer -->
 <br>
+<br>
+<br>
+<br>
+<br>
+
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
@@ -22,7 +27,7 @@
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example2" class="form-control" />
+              <input type="email" id="form5Example2" class="form-control" required>
               <label class="form-label" for="form5Example2">Dirección de correo electrónico</label>
             </div>
           </div>
